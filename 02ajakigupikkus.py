@@ -1,4 +1,4 @@
-# Autor: Anneli Tikerber
+# Autor: Anneli Tikerberr
 # Kuupäev: 11. detsember 2024
 # Ülesanne: Aia pikkuse arvutamine
 
