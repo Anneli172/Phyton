@@ -1,4 +1,4 @@
-# 3. ülesanne
+# 3. ülesannee
 #3,7 kolmnurk
 import turtle
 
