@@ -70,6 +70,45 @@ for autod in ev_data:
     #for i in autod:
        # print(i)
 
+    import turtle
+    # joonistan esimese ruudu
+    for _ in range(4):
+        turtle.forward(100)
+        turtle.right(90)
+        
+
+    import turtle
+    
+    for _ in range(4):
+        
+        turtle.forward(100)
+        turtle.right(90)
+        turtle.forward(50)
+        turtle.right(90) 
+        turtle.forward(50)
+        turtle.right(90)
+        turtle.right(100)
+        turtle.setheading(90)
+        turtle.forward(100)
+        turtle.right(90)
+        turtle.forward(100)
+        turtle.right(90)
+        turtle.forward(100)
+        turtle.right(90)
+        turtle.forward(50)
+
+        turtle.done()
+        
+
+
+        
+
+
+    
+
+    
+
+    
 
 
     
