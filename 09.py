@@ -70,6 +70,10 @@ for autod in ev_data:
     #for i in autod:
        # print(i)
 
+
+    # Ülesanne 9.14 Kodutöö
+
+
     import turtle
     # joonistan esimese ruudu
     for _ in range(4):
