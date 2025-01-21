@@ -71,7 +71,7 @@ for autod in ev_data:
        # print(i)
 
 
-    ## Ülesanne 9.14 Kodutöö
+    # Ülesanne 9.14 Kodutöö
 
 
     import turtle
