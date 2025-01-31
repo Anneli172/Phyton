@@ -32,24 +32,27 @@
 # Ada tahab valida plaadiautomaadist laulu ja uurib, milliseid laule masin mängib. Muusikapalad on kirjas failis, kus iga laul on eraldi real.
 # Programmi testimiseks kasutatakse järgmisi faile, mida võite salvestada või koostada ise mõne tekstiredaktoriga (nt Notepad):
 
-musa = "edm"
+# musa = "edm"
+# fail = open(f"kaustanimi/{musa}.txt", encoding="UTF-8")
 
-fail = open(f"txt/{musa}.txt", encoding="UTF-8")
-
+muusika = "edm.txt"
+fail = open(muusika, encoding="UTF-8")
 
 nr = 1
+#Näita kõiki lugusid
 for pala in fail:
-    print(str(nr)+"."+pala, end="")
-    nr+=1
- # Kuva valitud lugu   
-    print()
-    valik = int(input("Vali lugu: "))
-    fail = open(musa, encoding="UTF-8")
-    mangin = 1
-    for pala in fail:
-        if valik == mangin:
-         print(pala, end="")
-         mangin+=1
+    print(str(nr) + ". " + pala, end="")
+    nr += 1
 
+#Kuva valitud lugu
+print()
+valik = int(input("Vali lugu: "))
+fail.seek(0)
+#fail = open(muusika, encoding="UTF-8")
+mangin = 1
+for pala in fail:
+    if valik == mangin:
+        print(pala, end="")
+    mangin += 1
+fail.close()
 
-fail.close
