@@ -53,6 +53,6 @@ mangin = 1
 for pala in fail:
     if valik == mangin:
         print(pala, end="")
-    mangin += 1
+    mangin += 100
 fail.close()
 
