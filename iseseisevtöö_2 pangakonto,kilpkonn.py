@@ -2,7 +2,7 @@
 # Looge funktsioon, mis võimaldab lisada või eemaldada summasid pangakontolt. Funktsioon peaks algama algse saldoga ja võimaldama teha operatsioone:
 # deposiit (raha lisamine)
 # väljavõte (raha eemaldamine)
-# Tagastage peale igat toimingut konto jääk.
+# Tagastage peale igat toimingut konto jääk .
 # Funtsiooni parameetrid:
 # algne_saldo: algse saldo väärtus
 # toiming: String, mis tähistab tehtavat toimingut ('deposiit' või 'valjavote')
