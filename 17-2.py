@@ -8,5 +8,6 @@ with open("palgad.txt") as fail:
        print(tykeldus[3])
        if tykeldus[3]=="Mees":
             mpalgad+=float(tykeldus[6])
-    print(f"Meeste palgad: {mpalgad:.2f}")
+    print(f"Meeste palgad: {mpalgad:.2f}") # Meeste palgad kokku liidetud
+    
 
