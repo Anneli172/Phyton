@@ -1,6 +1,6 @@
-import requests
+import requests #pip install request kirjuta terminali
 
-city = "Haapsalu"
+city = "Kärdla"
 api_key = "1d875d3feb2acd02c7c6fadf4074b3d4"
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
@@ -17,3 +17,4 @@ if response.status_code == 200:
     print(f"Temperatuur: {temperature} °C")
 else:
     print("Viga andmete allalaadimisel:", response.status_code)
+
