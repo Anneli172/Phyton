@@ -1,3 +1,6 @@
+# Lisa võimalus, et ma saan sinu kuvatud andmetest otsida midagi ehk kasutad input'i ja if-lauset. 
+# Valesti otsimisel kuvatakse ilus veateade.
+
 import json
 
 with open('comments.json', 'r', encoding='utf-8') as file:
