@@ -1,0 +1,41 @@
+#Leia kõige madalam ja kõige kõrgem temperatuur
+# Arvuta iga linna keskmine temperatuur kogu perioodi jooksul
+# Leia päevad millal temp oli neg
+#Loetle mitu päeva oli "Päikesepaisteline"
+# Leia mitu päeva oli temperatuur üle 20C
+import requests
+
+
+url = f"https://www.metshein.com/kordamine/json/ilmateade.json"
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    
+    print(data)
+    maks = 0
+    miinus  = 0
+    paike = 0
+
+    for ilm in data['ilmateade']:
+        temp = ilm['temperatuur']
+        if temp < 0:
+            print(ilm)
+        if temp > maks:
+            maks = temp
+        
+        if temp < miinus:
+            miinus = temp
+        olukord = ilm['olukord']
+        if olukord == 'Päikesepaisteline':
+            paike +=1
+            
+            
+    print (f"Miinum temperatuur: {miinus}")
+    print (f"Maksimum temoeratuur: {maks}")
+   
+    print(f"Mitu päeva oli päikseline: {paike }")
+
+   
+else:
+    print("Viga andmete allalaadimisel:", response.status_code)
