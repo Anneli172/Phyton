@@ -8,27 +8,56 @@
 <body>
     <div class="container"></div>
     <div class="header"></div>
-    <header><strong>Vormide loomine</strong></header>
-        <table border="0">
+    <h1><strong>Vormide loomine</strong></h1>
+        <table>
             <tr>
                 <td>Kasutajanimi:</td>
-                <td><input type="text" placeholder="max pikkus 6">
-                </td>
+                <td><input type="text" placeholder="max pikkus 6"></td> 
             </tr>
             <tr>
                 <td>Kursus:</td>
-            <td><input type="Kursus" placeholder="max pikkus 3"></td></tr>
-            </table>
+                <td><input type="text" placeholder="max pikkus 3"></td>
             <tr>
-                <form>
-                    <label>Otsingu number:</label>
-                <input type="number" name="Osingu nr" value="1"></tr>
-            <table>
+                <td><label>Osakonna number:</label></td>
+                <td> <select>
+                    <option value="number">1</option>
+                    </select>
+                </td>  
                 <tr>
-                <td>Parool:</td>
-                <td><input type="password" name="Parool" placeholder="Sisesta parool"></td>
+                    <td>Parool:</td>
+                    <td><input type="password" name="Parool" placeholder="Sisesta parool"></td>
+                </tr>
+            <tr>
+                <td>Vali teenus:</td>
+                <td>
+                    <select>
+                        <option value="odav">Odav 0,59 &euro; </option>
+                        <option value="kallis">Kallis 2,00 &euro;</option>
+                    </select>
+                </td>
             </tr>
+            <tr>
+                <td><label>Roll:</label></td>                
+                <td><input type="radio" name="roll" value="ad">Admin<br>
+                    <input type="radio" name="roll" value="ad">Moderaator <br>
+                    <input type="radio" name="roll" value="ad">User <br>
+                </td>                 
+            </tr>            
+        <tr>
+                <td><label>Nõustun tingimustega:</label></td>
+                <td><input type="checkbox" value="nõus" checked=""></td>
+        </tr>
+        <tr> 
+                <td><label>Enesetutvustus:</label></td>  
+            <td>
+                <textarea name="Sisesta tekst" id="1" cols="30" rows="10"></textarea><br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><input type="submit" value="Tühjenda väljad"></td>
+            <td><input type="submit" value="Saada">
+        </tr>
         </table>
-        </form>
         </body>
         </html>
