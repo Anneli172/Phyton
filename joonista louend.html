@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Joonistuslõuend</title>
+<script type="text/javascript">
+  //kui veebileht on laetud, siis käivitatakse draw() funktsioon
+  window.onload = draw;
+ 
+  //draw() funktsioon, mis tegeleb kujundi joonistamisega
+  function draw(){
+  var canvas = document.getElementById('louend');
+    if (canvas.getContext){
+      var ctx = canvas.getContext('2d');
+      //siia kujundi joonistamise kood
+    }
+  }
+</script>
+<style type="text/css">
+  canvas{border: 2px solid red;}
+</style>
+</head>
+<body>
+  <canvas id="louend" width="200" height="200"></canvas>
+</body>
+</html>
